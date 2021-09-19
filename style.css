@@ -1,0 +1,383 @@
+body {
+    font-family: sans-serif;
+    background-color: #000000 !important;
+}
+
+.file-upload {
+    background-color: #ffffff;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #ffffff;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-upload-wrap:hover {
+    background-color: #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 60px 0;
+}
+
+.file-upload-image {
+    /* width: 15rem; */
+    max-width: 100%;
+    margin: auto;
+}
+
+.remove-image {
+    display: none;
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.predict-button {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: goldenrod;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid goldenrod;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.predict-button:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 0px;
+    gap: 15px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 70px auto 20px;
+    text-align: center;
+}
+
+.message {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 72px auto 20px;
+    text-align: center;
+}
+
+.thxto {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 15px auto 20px;
+    text-align: center;
+}
+
+#label-container {
+    color: rgb(0, 0, 0);
+}
+
+.bar-container {
+    height: 2.7rem;
+}
+
+/* .Prada-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(117, 204, 84, 0.2);
+} */
+.Prada-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #782626;
+}
+/* .deer-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(117, 204, 84, 0.2);
+} */
+.Chanel-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #ff6c0a;
+}
+/* .dog-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(27, 175, 234, 0.2);
+} */
+.Diol-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #e56995;
+}
+/* .cat-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(251, 176, 59, 0.2);
+} */
+.Gucci-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #9f6012;
+}
+/* .bear-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(195, 140, 102, 0.2);
+} */
+.YSL-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #544848;
+}
+/* .fox-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(49, 132, 155, 0.2);
+} */
+.Louis_vuitton-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #9b6b43;
+}
+/* .Fendi-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(235, 166, 190, 0.2);
+} */
+.Fendi-bar {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #ab607a;
+}
+.percent-text {
+    font-size: 1rem;
+    color: #000000;
+}
+.animal-label {
+    width: 20%;
+    text-align: left;
+    /* height: 2rem; */
+}
+#label-container {
+    width: 80%;
+    /* margin: 0 auto; */
+}
+
+#loading {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.result-message {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+
+    gap: 15px;
+}
+
+.animal-explain {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.Prada-animal-title {
+    font-size: 2rem;
+    color: #782626;
+}
+.Prada-animal-celeb {
+    font-size: 1.5rem;
+    color: #782626;
+}
+.Chanel-animal-title {
+    font-size: 2rem;
+    color: #ff6c0a;
+}
+.Chanel-animal-celeb {
+    font-size: 1.5rem;
+    color: #ff6c0a;
+}
+.Gucci-animal-title {
+    font-size: 2rem;
+    color: #9f6012;
+}
+.Gucci-animal-celeb {
+    font-size: 1.5rem;
+    color: #9f6012;
+}
+.Diol-animal-title {
+    font-size: 2rem;
+    color: #e56995;
+}
+.Diol-animal-celeb {
+    font-size: 1.5rem;
+    color: #e56995;
+}
+.YSL-animal-title {
+    font-size: 2rem;
+    color: #544848;
+}
+.YSL-animal-celeb {
+    font-size: 1.5rem;
+    color: #544848;
+}
+.Louis_vuitton-animal-title {
+    font-size: 2rem;
+    color: #9b6b43;
+}
+.Louis_vuitton-animal-celeb {
+    font-size: 1.5rem;
+    color: #9b6b43;
+}
+.Fendi-animal-title {
+    font-size: 2rem;
+    color: #ab607a;
+}
+.Fendi-animal-celeb {
+    font-size: 1.5rem;
+    color: #ab607a;
+}
