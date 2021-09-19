@@ -149,6 +149,9 @@ async function predict() {
         var label =
             "<div class='animal-label d-flex align-items-center'>" +
             labelTitle +
+            "  " +
+            Math.round(prediction[i].probability.toFixed(2) * 100) +
+            "%" +
             "</div>";
         var bar =
             "<div class='bar-container position-relative'><div class='" +
@@ -159,8 +162,7 @@ async function predict() {
             "-bar' style='width: " +
             barWidth +
             "'><span class='d-block percent-text'>" +
-            Math.round(prediction[i].probability.toFixed(2) * 100) +
-            "%</span></div></div>";
+            "</span></div></div>";
         labelContainer.childNodes[i].innerHTML = label + bar;
     }
 
