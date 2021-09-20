@@ -68,7 +68,7 @@ body {
 }
 
 .file-upload-image {
-    /* width: 15rem; */
+    /* width: 90%; */
     max-width: 100%;
     margin: auto;
 }
@@ -136,9 +136,17 @@ body {
 
 .title {
     color: #ffffff;
-    font-size: 64px;
+    font-size: 5rem;
     font-weight: bold;
-    margin: 64px auto 20px;
+    margin: 5rem auto 20px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-size: 3.2rem;
+    /* font-weight: bold;
+    margin: 3rem auto 20px; */
     text-align: center;
 }
 
