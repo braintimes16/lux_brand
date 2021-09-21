@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://luxbrandtest.netlify.app/sitemap.xml
