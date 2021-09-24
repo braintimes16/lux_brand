@@ -147,7 +147,7 @@ async function predict() {
         //     ">" +
         //     "</div>";
         var label =
-            "<div class='animal-label d-flex align-items-center'>" +
+            "<div class='brand-label d-flex align-items-center'>" +
             labelTitle +
             "  " +
             Math.round(prediction[i].probability.toFixed(2) * 100) +
@@ -189,7 +189,8 @@ function readURL(input) {
             predict();
             $("#loading").hide();
             $(".result-message").show();
-            $(".animal-label").show();
+            $("#label-container").show();
+            $(".brand-label").show();
             $(".bar-container").show();
             $(".remove-image").show();
             $(".addthis_inline_share_toolbox_ofg8").show();
@@ -205,14 +206,14 @@ function removeUpload() {
     $(".file-upload-content").hide();
     $(".image-upload-wrap").show();
     $(".result-message").hide();
-    $(".animal-label").hide();
+    $(".brand-label").hide();
     $(".bar-container").hide();
     $(".remove-image").hide();
     $("addthis_inline_share_toolbox_ofg8").hide();
     $(".file-upload-input").val("");
     $(".container").css("padding", "0px");
     // $("#wordCloud").hide();
-    // $(".labelContainer").hide();
+    $("#label-container").hide();
 }
 $(".image-upload-wrap").bind("dragover", function () {
     $(".image-upload-wrap").addClass("image-dropping");
